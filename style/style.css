@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+div.clear{
+    clear: both;
+}
+
+div.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}  
+
+/* Header */
+header{
+    padding: 20px 2%;
+} 
+
+/* Header image logo */
+header picture.logo img{
+    float: left;
+    width: 236px;
+}
+/* Header Menu mobile*/
+nav#menu_principal_mobile{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background-image: url("../images/menu-mobile.png");
+    background-size: 100% 100%;
+	float: right;
+    text-transform: uppercase;
+    display: none;
+}
+
+nav#menu_principal_mobile ul{
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgb(224, 224, 224);
+    display: none;
+}
+nav#menu_principal_mobile ul li{
+    padding: 10px;
+    border: 1px solid rgb(182, 182, 182);
+}
+nav#menu_principal_mobile ul li:hover{
+    background-color: #bebebe;
+}
+header nav#menu_principal_mobile ul li a{
+    text-decoration: none;
+    color: #686868;
+}
+
+/* Header Menu */
+header nav#menu_principal{
+    float: right;
+    padding-top: 8px;
+}
+header nav#menu_principal ul{
+    list-style: none;
+}
+header nav#menu_principal ul li{
+    float: left;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+header nav#menu_principal ul li a{
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+/* mosaico */
+section#mosaico{
+    padding: 20px 2%;
+}
+div.mosaico-single{
+    float: left;
+    width: calc(100% / 6);
+}
+div.img-mosaico-single{
+    width: 100%;
+    padding-top: 100%;
+    background-color: #b4b4b4;      /* substituir por background-image */
+    border: 5px solid white;
+}
+
+/* infos mosaico*/
+section#servicos div.container{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -70px;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+/* infos mosaico texto*/
+section#servicos div.container div.box-servicos:nth-last-of-type(1), section#servicos div.container div.box-servicos:nth-last-of-type(3){
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
+}
+section#servicos div.container div.box-servicos:nth-last-of-type(2){
+    width: 40%;
+    padding: 80px 2%;
+    background-color: #688293;
+}
+section#servicos div.container div.box-servicos h2{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+section#servicos div.container div.box-servicos p{
+    margin-top: 8px;
+    font-size: 13px;
+}
+/* infos mosaico imagens*/
+section#servicos div.container div.box-servicos picture img{
+    padding-top: 10px;
+}
+
+/* section info profissional */
+section#perfil-container{
+	padding:40px 0;
+}
+section#perfil-container div.container{
+    max-width: 800px;
+}
+
+section#perfil-container div#perfil-wraper{
+    padding-top: 60%;
+    position: relative;
+}
+section#perfil-container div#perfil-wraper2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+/* section proficional imagem */
+section#perfil-container picture img{
+    width: 100%;
+    height: 100%;
+} 
+
+/* section proficional texto */
+section#perfil-container div#texto-perfil{
+    width: 60%;
+    min-width: 300px;
+    padding: 0px 50px;
+}
+section#perfil-container div#texto-perfil h2{
+    color: #698293;
+    font-size: 18px;
+    text-align: center;
+}
+section#perfil-container div#texto-perfil p{
+    text-indent: 20px;
+    color: #4b4b4b;
+    font-size: 14px;
+    margin-top:8px;
+}
+
+/* Section video */
+section#videos{
+	padding:50px 0;
+}
+section#videos div.box-video{
+    float: left;
+    width: 33.3%;
+    padding-top: calc(33.3% * 0.6);
+    position: relative;
+    border: 5px solid white;
+}
+section#videos div.box-video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+}
+
+/* Section Tratamentos*/
+section#tratamento div.tratamento_container{
+    float: left;
+    width: 33.3%;
+}
+section#tratamento div.tratamento_container div.tratamento_single{
+    padding: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: #ececec;
+}
+/* Section Tratamentos Texto*/
+section#tratamento div.container h1{
+    text-align: center;
+    padding: 30px 0;
+    color: #414040;
+    font-size: 28px;
+}
+section#tratamento div.tratamento_container div.tratamento_single h2{
+    font-size: 18px;
+    color: #4d4d4d;
+}
+section#tratamento div.tratamento_container div.tratamento_single p{
+    font-size: 13px;
+    color: #5c5c5c;
+    padding: 10px 0;;
+}
+
+/* Depoimentostostostos */
+section#Depoimentos div.container{
+    padding: 50px 0;
+    max-width: 400px;
+}
+/* Depoimentos Texto */
+section#Depoimentos h1{
+    padding-top: 40px;
+    color: #698293;
+    font-size: 18px;
+    text-align: center;
+}
+section#Depoimentos div.Depoimentosto_single{
+    text-align: center;
+    width: 100%;
+}
+section#Depoimentos quote{
+    font-size: 15px;
+    color: #5c5c5c;
+}
+section#Depoimentos div.nome_Depoimentosto{
+    padding: 8px 0;
+}
+section#Depoimentos img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+section#Depoimentos span{
+    font-size: 16px;
+    color: #5c5c5c;
+    vertical-align: top;
+    position: relative;
+    top: 5px;
+}
+
+/* Section Sobre Instagram */
+section#Sobre div#instagram{
+    float: left;
+    text-align: center;
+    padding: 40px 0;
+    width: 100%;
+    background-color: #98a5ae;
+}
+/* Section Sobre Instagram Texto */
+section#Sobre div#instagram p{
+    color: white;
+    font-size: 13px;
+    padding: 10px 0;
+    line-height: 20px;
+}
+/* Section Sobre mosaico */
+section#Sobre div#mosaico_social{
+    width: 100%;
+    float: left;
+}
+section#Sobre div.mosaico_social_sngle{
+    float: left;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: #414040;
+    border: 3px solid white;
+}
+/* Section Redes Sociais Facebook */
+section#Sobre div#facebook{
+    float: left;
+    text-align: center;
+    padding: 40px 0;
+    width: 100%;
+    background-color: #576975;
+}
+/* Section Sobre Facebook Texto */
+section#Sobre div#facebook p{
+    color: white;
+    font-size: 13px;
+    padding: 10px 0;
+    line-height: 20px;
+}
+
+/* Section Contato */
+section#Contato{
+    margin: 60px 10%;
+}
+/* Section Contato Texto */
+section#Contato h2{
+    color: #698293;
+    font-size: 18px;
+    text-align: center;
+}
+section#Contato span{
+    font-size: 15px;
+    color: #838383;
+}
+
+/* Section Contato Formulário */
+section#Contato form{
+    width: 50%;
+    height: 400px;
+    max-width: 500px;
+    float: left;
+}
+section#Contato div.form-wraper{
+    float: left;
+    margin-top: 10px;
+    padding: 0 5px;
+}
+section#Contato form input{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+    margin-top: 8px;
+}
+section#Contato textarea{
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding: 8px;
+    border: 1px solid #dadada;
+}
+section#Contato input[type=submit]{
+    width: 100px;
+    height: 35px;
+    border: 0;
+    background: #688293;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+}
+section#Contato div.w100{
+    width: 100%;
+}
+section#Contato div.w50{
+    width: 50%;
+}
+section#Contato div#gps{
+    float: left;
+    width: 50%;
+    height: 400px;
+    background-color: #414040;
+}
+
+
+/* footer */
+footer{
+    padding: 70px 2%;
+    background-color: #688293;
+}
+footer div.container{
+    max-width: 1100px;
+    padding-left: 5%;
+}
+footer div.footer_block{
+    float: left;
+    width: 33.3%;
+    text-align: left;
+}
+footer div.footer_block_inside{
+    width: 50%;
+    margin: auto;
+}
+/* footer Texto*/
+footer div.footer_block h2{
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+footer div.footer_block p{
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px){
+    /* Section Redes sociais Mosaico */
+    section#Sobre div.mosaico_social_sngle{
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+    section#Sobre div.mosaico_social_sngle:nth-of-type(1n+7){
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+
+    /* Header menu principal */
+	nav#menu_principal{
+		display: none;
+	}
+
+    /* Header menu mobile */
+	nav#menu_principal_mobile{
+		display: block;
+	}
+    header nav#menu_principal_mobile ul{
+        list-style: none;
+    }
+    header nav#menu_principal_mobile ul li{
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+
+    /* Section servicos */
+    section#servicos{
+        padding-top:40%;
+    }
+	section#servicos div.container{
+		flex-direction: column;
+	}
+	section#servicos div.container div.box-servico:nth-of-type(1), section#servicos div.container div.box-servico:nth-of-type(3){
+		width: 90%;
+		max-width: 350px;
+		padding:30px 2%;
+	}
+	section.servicos div.container div.box-servico:nth-of-type(2){
+		width: 94%;
+		max-width: 380px;
+		padding:40px 2%;
+	}
+
+    /* Section perfil */
+    section#perfil-container div#perfil-wraper{
+		padding: 0;
+	}
+	section#perfil-container div#perfil-wraper2{
+		text-align: center;
+		display: inline-block;
+        height: auto;
+        position: static;
+        padding: 0;
+	}
+	section#perfil-container picture#img-perfil{
+	    width: 50%;
+    	display: inline-block;
+	    height: auto;
+	}
+	section#perfil-container div#texto-perfil{
+		display: inline-block;
+		text-align: justify;
+		width: 100%;
+		padding:0 30px;
+	}
+
+    /* Section Videos */
+    section#videos div.box-video{
+        width: 100%;
+        padding-top: calc(100% * 0.6);
+        border: 25px solid white;
+    }
+    section#videos div.box-video iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        height: 100%;
+    }
+
+    /* Section Sobre mosaico */
+    section#Sobre div.mosaico_social_sngle{
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+    }
+    section#Sobre div.mosaico_social_sngle:nth-of-type(1n+4){
+        display: none;
+    }
+
+    /* Footer */
+    footer{
+        padding: 10px;
+    }
+    footer div.footer_block{
+        float: none;
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+    footer div.footer_block_inside{
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 580px){
+    /* Section perfil imagem */
+	section#perfil-container picture#img-perfil{
+		width: 80%;
+		padding-top:5%;
+	}
+
+    /* Section formulário */
+    section#Contato div.w50{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+	header picture#logo img{
+		width: 200px;
+	}
+}
